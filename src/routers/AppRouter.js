@@ -1,13 +1,24 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
+import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom"
 import Counter from '../components/Counter'
 import GenerarGuia from '../components/GenerarGuia'
 
+import { Grid, Typography } from '@material-ui/core'
+import '../styles/style.css'
+
 const HeaderNav = () =>  (
-    <header className="navbar">
-        <NavLink to="/" activeClassName="selected" exact >Counter</NavLink>
-        <NavLink to="/generar-guia" activeClassName="selected">Generar Guia</NavLink>
-    </header>
+    <Grid container justify="center" spacing={2} className="root">
+        <Grid item > 
+            <NavLink to="/" activeClassName="selected" exact style={{ textDecoration: 'none' }}>
+                <Typography variant="h6" component="h5">Counter</Typography>
+            </NavLink> 
+        </Grid>
+        <Grid item>
+            <NavLink to="/generar-guia" activeClassName="selected" style={{ textDecoration: 'none' }}>
+                <Typography variant="h6" component="h5">Generar Guia</Typography>
+            </NavLink>
+        </Grid>
+    </Grid>
 )
 
 export default class AppRouter extends React.Component {

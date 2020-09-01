@@ -1,0 +1,12 @@
+body {
+    background-color: cornflowerblue;
+}
+
+.root {
+    margin: 15px;
+    padding: 15px;
+}
+
+.selected {
+    color: brown;
+}
