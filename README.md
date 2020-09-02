@@ -12,3 +12,5 @@ Pre:
 2. Levantar el servidor: yarn run start.
 3. Ejecutar la application en dev: yarn run dev-server.
 
+Proporcionar un token valido. Editar el archivo en la variable de entorno.
+API_TOKEN=
